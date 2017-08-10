@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pomodoro Clock</title>
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+<body class="pomodoro">
+	<div class="container">
+		<div class="setTimerVals">
+		<div class="break">
+			<div class="brkTxt">Break length</div>
+			<div class="secondRow">
+				<input type="button" class="textBtn" value="-" id="subtractBreak" name="subtractBreak" onclick="subBrLen()">
+				<p class="timerVal" id="brTimerVal">2</p>
+				<input type="button" class="textBtn" value="+" name="addBreak" id="addBreak" onclick="addBrLen()">
+			</div>
+		</div>
+		<div class="session">
+			<div class="brkTxt">Session length</div>
+			<div class="secondRow">
+				<input type="button" class="textBtn" value="-" name="subtractSession" id="subtractSession" onclick="subtractSessLen()">
+				<p class="timerVal" id="sessTimerVal">5</p>
+				<input type="button" class="textBtn" value="+" name="addSession" id="addSession" onclick="addSessLen()">
+			</div>
+		</div>
+		</div>
+  <div class="timer-length">
+		
+		<p class="watchText" id="watchText">Session</p>
+		<p class="liveTimer" id="liveCntDwn">5</p>
+		
+		<input type="button" value=">" class="round-button" id="play">
+		<input type="button" value="||" class="pause-button" id="pause">
+		<div id="load-bar">
+		</div>
+  </div>
+	</div>
+</body>
+</html>
